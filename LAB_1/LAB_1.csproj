@@ -109,10 +109,10 @@
     <Content Include="img\bild.jpg" />
     <Content Include="img\logo.png" />
     <Content Include="index.html" />
-    <Content Include="Page2.html" />
-    <Content Include="page3.html" />
-    <Content Include="page4.html" />
-    <Content Include="page5.html" />
+    <Content Include="pages\Page2.html" />
+    <Content Include="pages\page3.html" />
+    <Content Include="pages\page4.html" />
+    <Content Include="pages\page5.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="sound\NeonHeart-EndlessGrace.mp3" />
