@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        fieldset{
+            float: left;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Contact</legend>
+
+            <label for="ett">Tilltalsnamn</label><input id="ett" tabindex="1" />
+            <label for="två">Civicstånd</label><input id="två" tabindex="3"/> <!--Tabindex vilken ordning man tabbar i-->
+            <label for="tre">Titel</label><input id="tre" tabindex="2" />
+        </fieldset><br />
+        <fieldset>
+            <legend>CO Contact</legend>
+
+            <label for="fyra">Tilltalsnamn</label><input id="fyra" />
+            <label for="fem">Civicstånd</label><input id="fem" />
+            <label for="sex">Titel</label><input id="sex" />
+            <label for="spec">Inneboende</label><input type="checkbox" id="spec" />
+        </fieldset><br />
+        <fieldset>
+            <legend>Adress</legend>
+
+            <label for="sju">Gata</label><input id="sju" />
+            <label for="åtta">Postnummer</label><input id="åtta" />
+            <label for="nio">Stad</label><input id="nio" />
+        </fieldset><br />
+        <button type="submit">Skicka skiten</button>
+    </form>
+</body>
+</html>
