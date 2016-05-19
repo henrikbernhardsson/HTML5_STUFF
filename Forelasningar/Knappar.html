@@ -6,9 +6,11 @@
 </head>
 <body>
     <form>
-        Namn:<input required /><br />
-        Mail:<input type="email" required /><br />
-        Code:<input  required/><br />
+        <!--Fält för användaren att fylla i-->
+        Namn:<input name="name" required /><br />
+        Mail:<input name="mail" type="email" required /><br />
+        Code:<input name="code"  required/><br />
+        <!--En massa knappar-->
         <input type="submit" />
         <input type="reset" name="Reset" value="Reset" /> <!--Resettar bara fieldsen inom samma <form>-->
         <input type="button" value="Knapp" />
