@@ -1,7 +1,7 @@
 ﻿body {
 }
 
-@media (min-width: 642px) and (max-width: 768px) {
+@media (min-width: 642px) and (max-width: 800px) {
 
     body {
         background-color: chartreuse;
