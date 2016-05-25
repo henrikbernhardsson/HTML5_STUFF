@@ -107,9 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="pages\iPhone.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="style\print_stylesheet.css" />
+    <Content Include="style\style_iphone.css" />
     <Content Include="style\stylesheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
