@@ -1,0 +1,24 @@
+﻿body {
+}
+@media (min-width: 642px) and (max-width: 768px) {
+
+    body {
+        background-color: chartreuse;
+    }
+
+    #screen {
+        display: none;
+    }
+
+    #handheld {
+        display: none;
+    }
+
+    #tablet {
+        text-align: center;
+    }
+
+    #print {
+        display: none;
+    }
+}

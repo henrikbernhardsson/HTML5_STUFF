@@ -1,0 +1,26 @@
+﻿body {
+}
+@media (max-width: 641px) {
+    body{
+        background-color: hotpink;
+    }
+    #handheld {
+        text-align: center;
+        display: inherit;
+    }
+
+    #screen {
+        display: none;
+        
+    }
+
+    #tablet {
+        display: none;
+        
+    }
+
+    #print {
+        display: none;
+       
+    }
+}

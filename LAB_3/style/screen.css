@@ -1,0 +1,25 @@
+﻿body {
+}
+@media screen and (min-width:769px) {
+
+    body {
+        background-color: steelblue;
+    }
+
+    #screen {
+        text-align: center;
+        display: inherit;
+    }
+
+    #handheld {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+
+}

@@ -4,7 +4,14 @@
     <title>Skärm storlekar</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../style/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" media="all" href="style/screen.css" type="text/css">
+    <link rel="stylesheet" media="tablet, only screen and (min-width: 642px)" href="style/tablet.css" type="text/css">
+    <link rel="stylesheet" media="handheld, only screen and (min-width: 1px)" href="style/handheld.css" type="text/css">
+    
+    
+    
+    <link rel="stylesheet" media="print" href="style/print.css" type="text/css">
+    
     <!--<style type="text/css">
             body {
         background-color: lightblue;
@@ -106,7 +113,7 @@
         </style>-->
 </head>
 <body>
-    <h1 id="mobile">Hej mobil storlek!</h1>
+    <h1 id="handheld">Hej mobil storlek!</h1>
     <h1 id="tablet">Hej surfplatta storlek!</h1>
     <h1 id="screen">Hej dator storlek!</h1>
     <h1 id="print">Hej denna sidan kan skrivas ut!</h1>
