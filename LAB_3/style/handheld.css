@@ -1,9 +1,11 @@
 ﻿body {
 }
+
 @media (max-width: 641px) {
-    body{
+    body {
         background-color: hotpink;
     }
+
     #handheld {
         text-align: center;
         display: inherit;
@@ -11,16 +13,54 @@
 
     #screen {
         display: none;
-        
     }
 
     #tablet {
         display: none;
-        
     }
 
     #print {
         display: none;
-       
+    }
+
+    #moving {
+        border-radius: 30%/20%;
+        border: 1px solid black;
+        background-color: rgba(150,150,150,.8);
+        width: 220px;
+        position: fixed; /*relative och absolut*/
+        right: 10px; /*right*/
+        bottom: 10px; /*bottom*/
+        box-shadow: 10px 10px 5px #888888;
+    }
+
+        #moving ul {
+            list-style-type: none;
+        }
+
+        #moving li {
+            border: 2px solid black;
+            background-color: hotpink;
+            width: 70%;
+            margin: 5px;
+            padding: 7px;
+            font-size: 1.4em;
+            border-radius: 5px;
+            outline: 2px solid grey;
+        }
+
+            #moving li a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+                font-weight: 800;
+            }
+
+    element::first-line {
+        font-style: italic;
+    }
+
+    #moving {
+        font-style: italic;
     }
 }
