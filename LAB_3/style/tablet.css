@@ -1,7 +1,7 @@
 ﻿body {
 }
 
-@media (min-width: 642px) and (max-width: 800px) {
+@media tablet, only screen and (min-width: 642px) and (max-width: 800px) {
 
     body {
         background-color: chartreuse;
@@ -22,6 +22,10 @@
     #print {
         display: none;
     }
+    #handheldPicture{
+        width: 100%;
+        height: 100%;
+        position: relative;
 
     #moving {
         border-radius: 30%/20%;

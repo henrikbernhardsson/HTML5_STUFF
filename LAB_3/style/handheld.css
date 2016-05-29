@@ -1,7 +1,7 @@
 ﻿body {
 }
 
-@media (max-width: 641px) {
+@media handheld, only screen and (min-width: 1px) and (max-width: 642px) {
     body {
         background-color: hotpink;
     }
@@ -22,7 +22,11 @@
     #print {
         display: none;
     }
-
+    #handheldPicture{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
     #moving {
         border-radius: 30%/20%;
         border: 1px solid black;

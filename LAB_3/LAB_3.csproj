@@ -106,9 +106,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\Aldin2.jpg" />
+    <Content Include="images\Andre.jpg" />
+    <Content Include="images\Danne.jpg" />
     <Content Include="index.html" />
     <Content Include="pages\DingelingPostit.html" />
     <Content Include="pages\iPhone.html" />
+    <Content Include="pages\MobileFirst.html" />
+    <Content Include="pages\subPages\subpage1.html" />
+    <Content Include="pages\subPages\subpage2.html" />
+    <Content Include="pages\subPages\subpage3.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="style\handheld.css" />
