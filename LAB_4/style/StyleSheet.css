@@ -7,15 +7,16 @@ div#wrapperHeader {
     display: table;
     width: 100%;
     margin: 0 auto;
-    padding: 25px 0px;
+    padding: 30px 0px;
     vertical-align: middle;
     background-color: white;
     position: fixed;
     top: 0%;
-    z-index: 9002;
+    z-index: 50;
 }
 
     div#wrapperHeader h1#header {
+        color: #ff6a00;
         font-weight: normal;
         font-size: 130%;
         text-transform: uppercase;
@@ -32,12 +33,27 @@ div#wrapperHeader {
         position: relative;
         transition-property: text-shadow;
         transition-duration: 1s;
+        z-index: 50;
     }
 
         div#wrapperHeader h1#header:hover {
             text-shadow: 1px 0px 20px #ff6a00;
         }
+div#wrapperHeader img#spinningLogo {
+    position:fixed;
+    width: 40px;
+    height: 40px;
+    left: 5%;
+    top: 2%;
+    transition: all 8s;
+    z-index: 20;
+    opacity: 0.3;
+    
 
+}
+div#wrapperHeader img#spinningLogo:hover{
+    transform: rotate(970deg) scale(1.5);
+}
 
     div#wrapperHeader div#navigation ul {
         color: white;
@@ -49,7 +65,7 @@ div#wrapperHeader {
         list-style: none;
         line-height: 1em;
         position: fixed;
-        z-index: 8002;
+        z-index: 50;
         text-shadow: 1px 0px 10px gray;
     }
 
@@ -62,9 +78,9 @@ div#wrapperHeader {
             color: black;
             padding: 0px 35px;
             text-decoration: none;
-            transition-property: text-shadow;
-            transition-property:color;
-            transition-duration: 1s;
+            transition: text-shadow 1s, color 1s;
+
+
         }
 
     div#wrapperHeader div#navigation a:hover {
@@ -78,11 +94,11 @@ div#wrapperHeader {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    z-index: 8001;
+    z-index: 40;
 }
 
 .title {
-    z-index: 7002;
+    z-index: 41;
     position: absolute;
     background-color: white;
     left: 3%;
