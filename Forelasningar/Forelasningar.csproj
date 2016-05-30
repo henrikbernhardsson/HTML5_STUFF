@@ -106,6 +106,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="animations.html" />
+    <Content Include="animations2.html" />
     <Content Include="FlexBox.html" />
     <Content Include="FlightSearch.html" />
     <Content Include="Images\bmww.jpg" />
