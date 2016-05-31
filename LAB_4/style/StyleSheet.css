@@ -3,7 +3,7 @@
     font-family: 'Agency FB';
 }
 
-div#wrapperHeader {
+.wrapperHeader {
     display: table;
     width: 100%;
     margin: 0 auto;
@@ -12,10 +12,12 @@ div#wrapperHeader {
     background-color: white;
     position: fixed;
     top: 0%;
+    left: 0%;
     z-index: 50;
+    font-family: 'Agency FB';
 }
 
-    div#wrapperHeader h1#header {
+    .wrapperHeader h1#header {
         color: #ff6a00;
         font-weight: normal;
         font-size: 130%;
@@ -34,59 +36,29 @@ div#wrapperHeader {
         transition-property: text-shadow;
         transition-duration: 1s;
         z-index: 50;
+        left: 15px;
     }
 
-        div#wrapperHeader h1#header:hover {
+        .wrapperHeader h1#header:hover {
             text-shadow: 1px 0px 20px #ff6a00;
         }
-div#wrapperHeader img#spinningLogo {
-    position:fixed;
-    width: 40px;
-    height: 40px;
-    left: 5%;
-    top: 2%;
-    transition: all 8s;
-    z-index: 20;
-    opacity: 0.3;
-    
 
-}
-div#wrapperHeader img#spinningLogo:hover{
-    transform: rotate(970deg) scale(1.5);
-}
-
-    div#wrapperHeader div#navigation ul {
-        color: white;
-        font-size: 110%;
-        display: block;
-        width: 70%;
-        margin: auto;
-        padding: 0;
-        list-style: none;
-        line-height: 1em;
+.logo-container img {
         position: fixed;
-        z-index: 50;
-        text-shadow: 1px 0px 10px gray;
+        width: 40px;
+        height: 40px;
+        left: 2.5%;
+        top: 0.5%;
+        transition: all 8s;
+        z-index: 20;
+        opacity: 0.3;
     }
 
-    div#wrapperHeader div#navigation li {
-        float: right;
-    }
-
-        div#wrapperHeader div#navigation li a {
-            display: block;
-            color: black;
-            padding: 0px 35px;
-            text-decoration: none;
-            transition: text-shadow 1s, color 1s;
+/*.logo-container img:hover {
+            transform: rotate(970deg) scale(1.5);
+        }*/
 
 
-        }
-
-    div#wrapperHeader div#navigation a:hover {
-        color: gray;
-        text-shadow: 1px 0px 10px #ff6a00;
-    }
 
 .image-holder {
     width: 100%;
@@ -98,14 +70,73 @@ div#wrapperHeader img#spinningLogo:hover{
 }
 
 .title {
+    font-family: 'Agency FB';
     z-index: 41;
-    position: absolute;
+    position: relative;
     background-color: white;
     left: 3%;
-    top: 15%;
+    top: 25%;
     width: 490px;
     height: 80px;
     text-transform: uppercase;
     word-spacing: 2px;
     text-align: center;
+}
+
+.navbar-header{
+    background-color:white;
+    border:none;
+    color: red;
+    transition: all 8s;
+    
+}
+.head1{
+  
+}
+.navbar-header img:hover{
+    transform: rotate(970deg) scale(1.5);
+}
+.navbar{
+    background-color:white;
+    border:none;
+    margin-right: 90px;
+}
+.navbar-nav{
+      left: 70%;
+    position:fixed;
+}
+.nav a{
+    font-family:'Agency FB';
+    font-size: 120%;
+    letter-spacing: 1px;
+    text-align:right;
+    background-color:white;
+    border:none;
+     transition: text-shadow 1s;
+}
+.nav li a:hover{
+    text-shadow: 1px 0px 20px #ff6a00;
+}
+
+.container-fluid{
+    background-color:white;
+    border:none;
+}
+.navbar-brand{
+    font-family:'Agency FB';
+    letter-spacing: 3px;
+    color: #ff6a00;
+    font-size: 130%;
+}
+.container-fluid:hover img {
+    animation: 5s linear infinite;
+}
+@keyframes logo {
+    50% {
+        transform: rotateZ(180deg) scale(1.3);
+    }
+
+    100% {
+        transform: rotateZ(360deg) scale(1);
+    }
 }
