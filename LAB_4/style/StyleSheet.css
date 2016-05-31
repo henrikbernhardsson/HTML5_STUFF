@@ -3,6 +3,7 @@
     font-family: 'Agency FB';
 }
 
+
 .wrapperHeader {
     display: table;
     width: 100%;
@@ -62,7 +63,15 @@
 
 .image-holder {
     width: 100%;
-    height: 70vh;
+    height: 55vh;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 40;
+}
+.second-image-holder{
+    width: 100%;
+    height: 40vh;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -139,4 +148,20 @@
     100% {
         transform: rotateZ(360deg) scale(1);
     }
+}
+.surfer-img{
+    width: 100%;
+    height: 100%;
+}
+
+.row{
+    padding: 3% 0% 0% 0%;
+    font-family: 'Agency FB';
+    font-size: 120%;
+}
+.row h1{
+    transition: all 1s;
+}
+.row h1:hover{
+    text-shadow: 1px 0px 20px #ff6a00;
 }

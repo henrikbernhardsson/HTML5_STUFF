@@ -112,9 +112,13 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\food.jpg" />
+    <Content Include="img\history.jpg" />
     <Content Include="img\maldives.jpg" />
+    <Content Include="img\meed.jpg" />
     <Content Include="img\meedhupparu.jpg" />
     <Content Include="img\spinningFlower.jpg" />
+    <Content Include="img\surfer.jpg" />
     <Content Include="index.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
