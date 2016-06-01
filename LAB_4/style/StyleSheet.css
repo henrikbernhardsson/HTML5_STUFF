@@ -58,6 +58,10 @@
     text-transform: uppercase;
     word-spacing: 2px;
     text-align: center;
+    transition: text-shadow 1s;
+}
+.title:hover{
+    text-shadow: 1px 0px 20px #ff6a00;
 }
 
 .navbar-toggle {
@@ -210,3 +214,11 @@ footer{
     font-size: 120%;
 }
 
+.contactform{
+    position:relative;
+    top: 75px;
+}
+.btn-primary{
+    background-color: rgb(255, 212, 106);
+    color: black;
+}

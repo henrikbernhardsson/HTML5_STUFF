@@ -10,13 +10,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
     <script src="../scripts/jquery-2.2.3.min.js"></script>
-
+    
     <script src="../scripts/bootstrap.min.js"></script>
 
     <script src="../scripts/ai.0.15.0-build58334.min.js"></script>
 
     <link href="../style/StyleSheet.css" rel="stylesheet" />
 
+    <style type="text/css">
+        .box {
+            padding: 20px;
+            display: none;
+            margin-top: 20px;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 190px;
+            bottom: 78px;
+        }
+
+        .love img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .notspecial img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .ugly img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("select").change(function () {
+                $(this).find("option:selected").each(function () {
+                    if ($(this).attr("value") == "love") {
+                        $(".box").not(".love").hide();
+                        $(".love").show();
+                    }
+                    else if ($(this).attr("value") == "notspecial") {
+                        $(".box").not(".notspecial").hide();
+                        $(".notspecial").show();
+                    }
+                    else if ($(this).attr("value") == "ugly") {
+                        $(".box").not(".ugly").hide();
+                        $(".ugly").show();
+                    }
+                    else {
+                        $(".box").hide();
+                    }
+                });
+            }).change();
+        });
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-defualt">
@@ -60,7 +111,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-lg-12 col-sm-12">
                 <form>
                     <div class="form-group row">
                         <label for="inputName3" class="col-sm-2 form-control-label">First Name</label>
@@ -93,53 +144,41 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2">How do you like our website?</label>
                         <div class="col-sm-10">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                    Outstanding
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                    Nothing Special
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                    Rubbish
-                                </label>
-                            </div>
+                            <label class="sel1">How do you like this page?</label>
+                            <select class="form-control" id="sel1">
+
+                                <option>What do you think of the website?</option>
+                                <option value="love">Love it!</option>
+                                <option value="notspecial">Nothing Special</option>
+                                <option value="ugly">Ugly</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-sm-2">Checkbox</label>
-                        <div class="col-sm-10">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Check me out
-                                </label>
-                            </div>
-                        </div>
+                    <div class="love box">
+                        <img src="../img/emojis/love.png" />
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-secondary">Send</button>
-                        </div>
+                    <div class="notspecial box">
+                        <img src="../img/emojis/notspecial.png" />
+                    </div>
+                    <div class="ugly box">
+                        <a><img src="../img/emojis/ugly.png" alt="" /></a>
                     </div>
                 </form>
             </div>
+            <div class="form-group row">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-secondary">Send</button>
+                </div>
+            </div>
         </div>
     </div>
+
     <div class="col-lg-12">
         <div class="footer">
             <p>EC Utbildning Helsingborg, Sweden</p><p>© Henrik Bernhardsson 2016</p>
         </div>
     </div>
-
 
 </body>
 </html>

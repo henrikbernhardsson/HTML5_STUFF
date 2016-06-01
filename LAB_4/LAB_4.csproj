@@ -114,6 +114,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\boat.jpg" />
     <Content Include="img\city.png" />
+    <Content Include="img\emojis\love.png" />
+    <Content Include="img\emojis\notspecial.png" />
+    <Content Include="img\emojis\ugly.png" />
     <Content Include="img\festival1.jpg" />
     <Content Include="img\food.jpg" />
     <Content Include="img\history.jpg" />
