@@ -160,10 +160,14 @@
     <Content Include="scripts\jquery-2.2.3.min.js" />
     <Content Include="style\aquarium.css" />
     <Content Include="style\StyleSheet.css" />
+    <Content Include="style\video.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\Video\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
