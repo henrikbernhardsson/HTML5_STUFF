@@ -1,10 +1,83 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="sv-se">
 <head>
-    <title></title>
-	<meta charset="utf-8" />
+    <title>kund order</title>
+    <meta charset="utf-8" />
 </head>
 <body>
-
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Kund</legend>
+                        <form action="../pages/recipe.html">
+                            <fieldset>
+                                <legend>Användare</legend>
+                                <label for="användarnamn"> Användarnamn</label>
+                                <input type="text" name="användarnamn" id="användar" autofocus  />
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="email@gmail.com" />
+                                <label for="lösen">lösenord</label>
+                                <input type="password" name="lösenord" id="lösen" placeholder="********" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Leveransadress</legend>
+                                <label for="namn">Namn</label>
+                                <input type="text" name="namn" id="namn" />
+                                <label for="gata">Gata</label>
+                                <input type="text" name="gata" id="gata" /><br />
+                                <label for="postnr">Postnummer</label>
+                                <input type="text" name="stad" id="stad" /><br />
+                                <label for="telefonnr">Telefonnummer</label>
+                                <input type="text" name="telefonnr" id="telefonnr" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Betalningsadress</legend>
+                                <label for="kortnr">Kort nummer</label>
+                                <input type="text" name="kortnr" id="kortnr" />
+                                <label for="månad">Månad</label>
+                                <select name="månad" id="månad">
+                                    <option>Januari</option>
+                                    <option>Februari</option>
+                                    <option>Mars</option>
+                                    <option>April</option>
+                                    <option>Maj</option>
+                                    <option>Juni</option>
+                                    <option>Juli</option>
+                                    <option>Augusti</option>
+                                    <option>September</option>
+                                    <option>Oktober</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                                <label for="år">År</label>
+                                <select name="år" id="år">
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                </select>
+                                <br />
+                                <label for="namn">Namn</label>
+                                <input type="text" name="namn" id="namn" />
+                                <label for="gata">Gata</label>
+                                <input type="text" name="gata" id="gata"/>
+                                <label for="postnr">Postnummer</label>
+                                <input type="text" name="postnummer" id="postnr" />
+                                <label for="stad">Stad</label>
+                                <input type="text" name="stad" id="stad"/>
+                                <label for="telefonnr">Telefon nummer</label>
+                                <input type="text" name="telefonnr" id="telefonnr" placeholder="+46 76-5483519" />
+                            </fieldset>
+                            <button type="submit">Bekräfta</button>
+                        </form>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </header>
 </body>
 </html>

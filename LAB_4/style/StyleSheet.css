@@ -4,56 +4,18 @@
 }
 
 
-.wrapperHeader {
-    display: table;
-    width: 100%;
-    margin: 0 auto;
-    padding: 30px 0px;
-    vertical-align: middle;
-    background-color: white;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    z-index: 50;
-    font-family: 'Agency FB';
-}
 
-    .wrapperHeader h1#header {
-        color: #ff6a00;
-        font-weight: normal;
-        font-size: 130%;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 10px;
-        font-weight: 400;
-        font-style: normal;
-        margin: 0;
-        padding: 0px;
-        display: table-cell;
-        width: 30%;
-        vertical-align: middle;
-        line-height: 1em;
-        position: relative;
-        transition-property: text-shadow;
-        transition-duration: 1s;
-        z-index: 50;
-        left: 15px;
-    }
-
-        .wrapperHeader h1#header:hover {
-            text-shadow: 1px 0px 20px #ff6a00;
-        }
 
 .logo-container img {
-        position: fixed;
-        width: 40px;
-        height: 40px;
-        left: 50px;
-        top: 5px;
-        transition: all 8s;
-        z-index: 20;
-        opacity: 0.3;
-    }
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    left: 58px;
+    top: 9px;
+    transition: all 8s;
+    z-index: 20;
+    opacity: 0.3;
+}
 
 /*.logo-container img:hover {
             transform: rotate(970deg) scale(1.5);
@@ -70,7 +32,8 @@
     z-index: 40;
     top: 50%;
 }
-.second-image-holder{
+
+.second-image-holder {
     width: 100%;
     height: 40vh;
     background-position: center center;
@@ -87,60 +50,80 @@
     left: 3%;
     top: 25%;
     width: 490px;
-    height: 80px;
+    height: 40px;
     text-transform: uppercase;
     word-spacing: 2px;
     text-align: center;
 }
 
-.navbar-header{
-    background-color:white;
-    border:none;
+.navbar-toggle {
+    background-color: grey;
+}
+
+    .navbar-toggle .icon-bar {
+        background-color: black;
+    }
+
+.navbar-header {
+    background-color: white;
+    border: none;
     color: red;
-    transition: all 8s;
-    
+    transition: transform 8s;
 }
-.head1{
-  
-}
-.navbar-header img:hover{
-    transform: rotate(970deg) scale(1.5);
-}
-.navbar{
-    background-color:white;
-    border:none;
+
+    .navbar-header img:hover {
+        transform: rotate(970deg) scale(1.5);
+    }
+
+.navbar {
+    background-color: white;
+    border: none;
     width: 100%;
+    position: fixed;
+    z-index: 9000;
+    top: 0%;
 }
-.navbar-nav{
-      left: 70%;
-    position:fixed;
+
+.navbar-nav {
+    left: 70%;
+    position: fixed;
 }
-.nav a{
-    font-family:'Agency FB';
+
+.nav a {
+    font-family: 'Agency FB';
     font-size: 120%;
     letter-spacing: 1px;
-    text-align:right;
-    background-color:white;
-    border:none;
-     transition: text-shadow 1s;
+    text-align: right;
+    background-color: white;
+    border: none;
+    transition: text-shadow 1s;
 }
-.nav li a:hover{
+
+.nav li a:hover {
     text-shadow: 1px 0px 20px #ff6a00;
 }
 
-.container-fluid{
-    background-color:white;
-    border:none;
+.container-fluid {
+    background-color: white;
+    border: none;
 }
-.navbar-brand{
-    font-family:'Agency FB';
+
+.navbar-brand {
+    font-family: 'Agency FB';
     letter-spacing: 3px;
     color: #ff6a00;
     font-size: 130%;
+    text-transform: uppercase;
 }
+
+    .navbar-brand:hover {
+        color: #ff6a00;
+    }
+
 .container-fluid:hover img {
     animation: 5s linear infinite;
 }
+
 @keyframes logo {
     50% {
         transform: rotateZ(180deg) scale(1.3);
@@ -150,25 +133,29 @@
         transform: rotateZ(360deg) scale(1);
     }
 }
-.surfer-img{
+
+.surfer-img {
     width: 100%;
     height: 100%;
 }
 
-.row{
+.row {
     padding: 3% 0% 0% 0%;
     font-family: 'Agency FB';
     font-size: 120%;
 }
-.row h1{
-    transition: all 1s;
-}
-.row h1:hover{
-    text-shadow: 1px 0px 20px #ff6a00;
-}
+
+    .row h1 {
+        transition: all 1s;
+    }
+
+        .row h1:hover {
+            text-shadow: 1px 0px 20px #ff6a00;
+        }
+
 .album_container {
-    position: relative;
-    margin: 10px auto;
+    position: absolute;
+    margin: 10px;
     width: 100%;
     height: 100%;
     perspective: 1000px;
@@ -177,9 +164,12 @@
 .picture {
     width: 100%;
     height: 100%;
-    margin: 0;
+    position: relative;
     transform-style: preserve-3d;
-    transition: all 1.3s ease-in-out;
+    transition: all 1s ease-in-out;
+    margin: 10px auto;
+    border: 4px solid white;
+    top: 0px;
 }
 
 .front {
@@ -199,9 +189,31 @@
     transform: rotateY(180deg);
     padding: 10px;
     color: #aaa;
-    background-color: white;
+    background-color: #ffe9ae;
+}
+
+@media only screen and (max-width: 767px) {
+    .picture {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 10px auto;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+    }
 }
 
 .album_container:hover .picture {
     transform: rotateY(180deg);
+}
+
+.footer p {
+    width: 100%;
+    text-align: center;
+    font-family: 'Agency FB';
+    font-size: 120%;
+}
+
+.lowerRow {
+    height: 430px;
 }

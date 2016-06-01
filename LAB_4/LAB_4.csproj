@@ -120,6 +120,11 @@
     <Content Include="img\spinningFlower.jpg" />
     <Content Include="img\surfer.jpg" />
     <Content Include="index.html" />
+    <Content Include="pages\contact.html" />
+    <Content Include="pages\aquarium.html" />
+    <Content Include="pages\pictures.html" />
+    <Content Include="pages\reviews.html" />
+    <Content Include="pages\video.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
