@@ -136,6 +136,7 @@
     <Content Include="img\aquarium\stonefish.png" />
     <Content Include="img\sunset.jpg" />
     <Content Include="img\surfer.jpg" />
+    <Content Include="img\Video\tv.png" />
     <Content Include="img\yves.jpg" />
     <Content Include="index.html" />
     <Content Include="pages\contact.html" />
@@ -158,6 +159,7 @@
     <None Include="scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="scripts\jquery-2.2.3.js" />
     <Content Include="scripts\jquery-2.2.3.min.js" />
+    <Content Include="sound\Ocean sound effects.mp3" />
     <Content Include="style\aquarium.css" />
     <Content Include="style\StyleSheet.css" />
     <Content Include="style\video.css" />
@@ -166,9 +168,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="img\Video\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

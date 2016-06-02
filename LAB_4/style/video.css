@@ -1,2 +1,14 @@
 ﻿body {
 }
+.tv{
+    background-image: url(../img/Video/tv.png);
+    background-size:cover;
+    width:600px;
+    height:500px;
+    padding: 50px;
+}
+.video{
+    position:absolute;
+    top: 117px;
+    left: 11px;
+}
