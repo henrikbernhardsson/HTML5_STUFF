@@ -1,0 +1,14 @@
+﻿body {
+}
+.contactform{
+    position:relative;
+    width: 70%;
+    left: 0px;
+}
+aside{
+    width:25%;
+}
+.footer{
+    position:relative;
+    bottom: -90px;
+}
